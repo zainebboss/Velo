@@ -97,3 +97,9 @@ Route::get('form/view/detail', [App\Http\Controllers\FormController::class, 'vie
 Route::get('form/view/detail/{id}', [App\Http\Controllers\FormController::class, 'viewDetail'])->middleware('auth');
 Route::post('form/view/update', [App\Http\Controllers\FormController::class, 'viewUpdate'])->name('form/view/update');
 Route::get('delete/{id}', [App\Http\Controllers\FormController::class, 'viewDelete'])->middleware('auth');
+// ----------------------------- user Event -----------------------//
+
+Route::resource('activitie',\App\Http\Controllers\ActivitiesController::class);
+Route::resource('event',\App\Http\Controllers\EventController::class);
+Route::get('/activitie', [App\Http\Controllers\ActivitiesController::class, 'index'])->name('activitie');
+Route::get('/event', [App\Http\Controllers\EventController::class, 'index'])->name('event');

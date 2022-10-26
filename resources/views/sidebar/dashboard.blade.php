@@ -117,6 +117,29 @@
                         </li>
                     </ul>
                 </li>
+
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <i class="bi bi-grid-1x2-fill"></i>
+                        <span>View Events</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="">View Detail</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item  has-sub">
+                    <a href="#" class='sidebar-link'>
+                        <i class="bi bi-grid-1x2-fill"></i>
+                        <span>View Activites</span>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="">View Detail</a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="sidebar-item">
                     <a href="{{ route('lock_screen') }}" class='sidebar-link'>
                         <i class="bi bi-lock-fill"></i>
